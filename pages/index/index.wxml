@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<!--个人登陆-->
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>  
+      <image bindtap="bindViewTap" class="userpic" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="username">Welcom:{{userInfo.nickName}}</text>
+      <image class="userout" src="/image/me/out.jpg" mode="cover"></image>
+    </block>
+  </view>
+<swiper class="fengmian" indicator-dots="{{indicatorDots}}"  
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+      <block wx:for="{{imgUrls}}">  
+        <swiper-item>  
+            <image src="{{item.url}}"/>   
+        </swiper-item>  
+      </block>  
+</swiper> 
+<view class='title'>
+ {{motto}}
+</view>
+<view>
+<button style='margin:110px;' type='primary' size='mini' plain="true" bindtap='click'>开始我的日记本之旅</button>
+</view>

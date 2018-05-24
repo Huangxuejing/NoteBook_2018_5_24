@@ -1,0 +1,13 @@
+<!--pages/index/login.wxml-->
+<view class="login">
+  <text id='logintitle'>hxj_notebook</text>
+  <form bindsubmit='formSubmit'>
+    <view class='loginset'>
+      <input placeholder='请输入账号' name='name'></input>
+    </view>
+    <view class='loginset'>
+      <input placeholder='请输入密码' name='pwd'></input>
+    </view>
+    <button style='margin-left:160px;margin-top:17px;' type='primary' size='mini' plain="true" form-type='submit'>欢迎进入</button>
+  </form>
+</view>

@@ -1,0 +1,16 @@
+/* pages/book/book.wxss */
+.bg{
+  width: 100%;
+}
+.pic{
+  width: 80px;
+  height: 53px;
+}
+
+.pp{
+  float: left;
+}
+
+.p1{
+  margin-top: 30px;
+}

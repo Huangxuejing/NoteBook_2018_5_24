@@ -1,0 +1,14 @@
+<!--pages/book/book.wxml-->
+<view>
+  <view>
+   <image class="bg"src='/image/book/bg.jpg' ></image>
+  </view>
+  <view class="p1">
+<view class="pp" wx:for="{{list}}">
+<!-- <navigator url="../home/home?id={{item.channel_id}}" hover-class="navigator-hover">//id为要传的值的key,下个页面会用到 -->
+    <image src="{{item.avatar}}" class="pic"></image> 
+    <text class="title">{{item.name}}</text>
+<!-- </navigator> -->
+</view>
+</view>
+</view>

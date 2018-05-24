@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/login",
+    "pages/index/index",
+    "pages/book/book",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor":"red",
+    "navigationBarBackgroundColor": "#E0EEE0",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"red"
+  },
+  "tabBar":{
+    "backgroundColor":"#E0EEE0",
+    "selectedColor":"#CD950C",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "iconPath": "image/me/shouye.jpg",
+        "selectedIconPath":"image/me/shouye2.jpg",
+        "text":"首页abc"
+      },{
+        "pagePath": "pages/book/book",
+        "iconPath": "image/me/wode.jpg",
+        "selectedIconPath": "image/me/wode2.jpg",
+        "text": "日记本de"
+      },{
+        "pagePath": "pages/logs/logs",
+        "iconPath": "image/me/rizhi.jpg",
+        "selectedIconPath": "image/me/rizhi2.jpg",
+        "text": "日志h"
+      }
+    ]
+  }
+}
