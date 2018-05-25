@@ -5,7 +5,7 @@
     <block wx:else>  
       <image bindtap="bindViewTap" class="userpic" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="username">Welcom:{{userInfo.nickName}}</text>
-      <image class="userout" src="/image/me/out.jpg" mode="cover"></image>
+      <image class="userout" src="/image/me/out.jpg" mode="cover" bindtap='out'></image>
     </block>
   </view>
 <swiper class="fengmian" indicator-dots="{{indicatorDots}}"  

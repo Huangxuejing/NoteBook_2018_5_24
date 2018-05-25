@@ -30,9 +30,16 @@ Page({
       url: '../logs/logs'
     })
   },
+  //日记之旅
   click: function(){
     wx.switchTab({
       url: '../book/book',
+    })
+  },
+  //退出
+  out: function(){
+    wx.navigateTo({
+      url: '../index/login',
     })
   },
   onLoad: function () {
